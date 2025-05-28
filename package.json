@@ -1,15 +1,15 @@
 {
-  "name": "aiyana-chatbot",
-  "version": "1.0.0",
-  "description": "AIYANA chatbot for off-grid living and Forte Trading",
-  "main": "index.js",
+  "name": "aiyana-chatbot"
+  "version": "1.0.0"
+  "description": "AIYANA chatbot for off-grid living and Forte Trading"
+  "main": "index.js"
   "scripts": {
     "start": "node index.js"
-  },
+  }
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
+    "cors": "^2.8.5"
+    "dotenv": "^16.0.3"
+    "express": "^4.18.2"
     "openai": "^4.0.0"
   }
 }
