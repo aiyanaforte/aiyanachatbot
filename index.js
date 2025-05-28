@@ -27,11 +27,10 @@ app.post('/chat', async (req, res) => {
       messages: [
         {
           role: 'system',
-          content:
-            'You are AIYANA, an expert in off-grid living and all things related to the Forte Trading ecosystem. Always answer helpfully and with warmth.',
+          content: 'You are AIYANA, an expert in off-grid living and the Forte Trading ecosystem. Always respond helpfully and warmly.'
         },
-        { role: 'user', content: userMessage },
-      ],
+        { role: 'user', content: userMessage }
+      ]
     });
 
     res.json({ reply: response.data.choices[0].message.content.trim() });
