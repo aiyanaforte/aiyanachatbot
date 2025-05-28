@@ -3,9 +3,9 @@
   "name": "aiyana-chatbot",
   "version": "1.0.0",
   "description": "AIYANA chatbot for off-grid living and Forte Trading",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.mjs"
   },
   "dependencies": {
     "cors": "^2.8.5",
