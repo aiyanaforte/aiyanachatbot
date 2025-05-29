@@ -21,3 +21,66 @@
   <p>Your off-grid lifestyle assistant is live.</p>
 </body>
 </html>
+
+<html lang="en" data-theme="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AIYANA Chat</title>
+  <style>
+    :root {
+      --primary-color: #ff8c00;
+      --bg-color: #ffffff;
+      --text-color: #000000;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #1f1f1f;
+      --text-color: #f0f0f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 500px;
+      height: 600px;
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    #dark-toggle {
+      margin-bottom: 1rem;
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 10px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="dark-toggle">Toggle Dark Mode 🌓</button>
+  <iframe src="/public/inner.html"></iframe>
+
+  <script>
+    const toggle = document.getElementById('dark-toggle');
+    toggle.onclick = () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      document.documentElement.setAttribute('data-theme', current === 'dark' ? '' : 'dark');
+    };
+  </script>
+</body>
+</html>
